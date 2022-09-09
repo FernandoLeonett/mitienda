@@ -103,7 +103,7 @@ const DrawerComponent = () => {
               alignItems={"center"}
             >
               <Whatsaap />
-              {/* <MercadoPago /> */}
+         { false &&   <MercadoPago />}
             </Flex>
           </Box>
         </DrawerFooter>
