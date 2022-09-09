@@ -5,7 +5,7 @@ import { FaWhatsapp, FaInstagram, FaFacebook } from "react-icons/fa";
 import { GiRotaryPhone } from "react-icons/gi";
 import { urlWhatsaapp } from "utils/helper";
 import {
-  instagramAccount,
+  // instagramAccount,
   msgOWnerContact,
   whatsaapNumber,
   telefono,
@@ -55,24 +55,8 @@ const Footer = () => {
               aria-label={"link de whatssap  para confirmar la compra"}
             />
           </a>
-          <a target="_blank" href={instagramAccount} rel="noreferrer">
-            <Icon
-              h={9}
-              w={9}
-              marginRight={2}
-              color={"whiteAlpha.900"}
-              as={FaInstagram}
-            />
-          </a>
-          <a target="_blank" href={instagramAccount} rel="noreferrer">
-            <Icon
-              h={9}
-              w={9}
-              marginRight={2}
-              color={"whiteAlpha.900"}
-              as={FaFacebook}
-            />
-          </a>
+
+
         </Box>
       </Flex>
       <Text
