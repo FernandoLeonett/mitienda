@@ -18,7 +18,7 @@ import Search from "components/searchComponent/search";
 import { useShoping } from "../context/context";
 import CustomContainer from "components/customContainer/CustomContainer";
 import Head from "next/head";
-import apiExcel from "services/api";
+
 import { showBusinesName, showFavIcon } from "utils/ownerData";
 import getProducts from "services/storeservice";
 
