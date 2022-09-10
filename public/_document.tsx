@@ -15,8 +15,8 @@ export default function Document() {
         ></meta>
         <link
           rel="manifest"
-          crossOrigin="use-credentials"
-          href={manifestPath}
+          // crossOrigin="use-credentials"
+          href="manifest.json"
         />
 
       </Head>
