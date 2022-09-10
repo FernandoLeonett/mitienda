@@ -1,5 +1,5 @@
 import { Html, Head, Main, NextScript } from "next/document";
-import { documentSetttings, manifestPath } from "utils/ownerData";
+import { documentSetttings,  } from "utils/ownerData";
 
 export default function Document() {
   return (
