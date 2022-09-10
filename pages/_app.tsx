@@ -5,7 +5,7 @@ import { AppProps } from "next/app";
 import { ShoppingProvider } from "../context/context";
 import LandingLayout from "../components/layouts/layout";
 import theme from "../theme";
-import {themeOwner} from "utils/ownerData"
+import { themeOwner } from "utils/ownerData"
 
 
 

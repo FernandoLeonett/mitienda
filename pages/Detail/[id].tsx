@@ -12,10 +12,10 @@ interface Props {
 const Detail = ({ productInfo }: Props) => {
 
 
-useEffect(() => {
-console.log('productInfo', productInfo);
+  useEffect(() => {
+    console.log('productInfo', productInfo);
   }
-, [])
+    , [])
 
   return (
     <Container maxWidth={"container.lg"} p={5}>
