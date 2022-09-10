@@ -15,7 +15,7 @@ import {
 import { useShoping } from "context/context";
 import { useRouter } from "next/router";
 import { useRef } from "react";
-import { getInitPoint } from "products/mercadopago";
+import { getInitPoint } from "services/mercadopago";
 import { validateEmail } from "utils/helper";
 
 const RegisterForm = () => {
