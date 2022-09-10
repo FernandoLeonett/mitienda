@@ -1,11 +1,11 @@
 import { Box, Text, Icon, Flex } from "@chakra-ui/react";
 import useCart from "hooks/useCart";
-import { FaWhatsapp,  } from "react-icons/fa";
+import { FaWhatsapp, FaInstagram, FaFacebook } from "react-icons/fa";
 // import { BsTelephone } from "react-icons/bs";
 import { GiRotaryPhone } from "react-icons/gi";
 import { urlWhatsaapp } from "utils/helper";
 import {
-  // instagramAccount,
+
   msgOWnerContact,
   whatsaapNumber,
   telefono,
@@ -55,7 +55,6 @@ const Footer = () => {
               aria-label={"link de whatssap  para confirmar la compra"}
             />
           </a>
-
 
         </Box>
       </Flex>

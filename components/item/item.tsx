@@ -87,7 +87,7 @@ const Item = ({ product }: Props): JSX.Element => {
           Agregar
         </Button>
 
-        <Link href={`/Detail/${convertToPath(product.title)}`}>
+        <Link href={'/Detail/[id]'} as={`/Detail/${product.id.toString()}`}>
 
 
           <a

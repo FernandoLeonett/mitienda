@@ -22,6 +22,7 @@ import { useShoping } from "../../context/context";
 
 import { parseCurrency } from "../../utils/helper";
 
+import MercadoPago from "../mercado_pago_component/MercadoPago";
 import React, { useState, useEffect } from "react";
 import style from "styles/drawerComponent.module.css";
 import { businessType } from "utils/ownerData";
@@ -102,7 +103,7 @@ const DrawerComponent = () => {
               alignItems={"center"}
             >
               <Whatsaap />
-
+              {/* <MercadoPago /> */}
             </Flex>
           </Box>
         </DrawerFooter>

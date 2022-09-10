@@ -58,7 +58,7 @@ const ItemDetail = ({ product }: Props): JSX.Element => {
       </Button>
       <Flex justify={["center", "center", "flex-end"]}>
         <Button
-          onClick={btnHandlerGoHome}
+          onClick={()=>btnHandlerGoHome}
           background={"primary.400"}
           colorScheme={"primary"}
           width={"fit-content"}

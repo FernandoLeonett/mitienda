@@ -3,10 +3,10 @@ import ItemDetail from "components/itemDetail/ItemDetail";
 import SwiperImage from "components/swiperImage/SwiperImage";
 import Product from "interfaces/Product";
 import { useEffect } from "react";
-import { getItemData, getPathsFromTitle } from "services/item";
+import { getItemData, getPathsFromId } from "services/item";
 
 interface Props {
-  productInfo:{data:Product}
+  productInfo: Product
 }
 
 const Detail = ({ productInfo }: Props) => {
@@ -25,10 +25,10 @@ console.log('productInfo', productInfo);
         spacing={["1rem", "1rem", "3rem"]}
       >
         <Box w={["100%", "45%"]}>
-          <SwiperImage title={productInfo.data.title} image={productInfo.data.image} />
+          <SwiperImage title={productInfo.title} image={productInfo.image} />
         </Box>
         <Box w={["100%", "50%"]}>
-          <ItemDetail product={productInfo.data} />
+          <ItemDetail product={productInfo} />
         </Box>
       </Stack>
     </Container>
@@ -38,16 +38,17 @@ console.log('productInfo', productInfo);
 export default Detail;
 
 export async function getStaticPaths() {
-  const paths = await getPathsFromTitle();
+  //  const paths = await getPathsFromTitle();
+  const paths = await getPathsFromId()
 
   return {
     paths,
-    fallback: true,
+    fallback: false,
   };
 }
 
 export async function getStaticProps({ params }) {
-  const id:number = params.id;
+  const id = params.id;
   const productInfo = await getItemData(id);
 
   return {

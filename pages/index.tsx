@@ -11,13 +11,14 @@ const Swiper = dynamic(() => import("components/Swiper/Swiper"));
 const OpenCartSticky = dynamic(
   () => import("components/open_cart/OpenCartSticky")
 );
+const RegisterForm = dynamic(() => import("components/form/RegisterForm"));
 const Banner = dynamic(() => import("components/banner/Banner"));
 
 import Search from "components/searchComponent/search";
 import { useShoping } from "../context/context";
 import CustomContainer from "components/customContainer/CustomContainer";
 import Head from "next/head";
-
+import apiExcel from "services/api";
 import { showBusinesName, showFavIcon } from "utils/ownerData";
 import getProducts from "services/storeservice";
 
@@ -65,7 +66,7 @@ const IndexRoute = ({ initialProducts }: Props): JSX.Element => {
           </>
         )}
 
-
+        <RegisterForm />
         {stateProducts.products.length > 0 && (
           <>
             <CustomContainer>
