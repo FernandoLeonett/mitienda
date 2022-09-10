@@ -31,7 +31,7 @@ const Animation = (): JSX.Element => {
             direction={"column"}
             height="100%"
             justifyContent="center"
-            layoutId={selectedProduct.id}
+            layoutId={selectedProduct.id.toString()}
             left={0}
             position="fixed"
             top={0}
