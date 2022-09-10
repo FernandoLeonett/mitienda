@@ -42,7 +42,7 @@ const useCart = () => {
     }
   };
 
-  const removeItem = (deleteId: string) => {
+  const removeItem = (deleteId: number) => {
 
 
     setCart((prev) => prev.filter(({ product }) => product.id !== deleteId));
@@ -62,7 +62,7 @@ const useCart = () => {
     return total;
   };
 
-  const subTotal = (idSearched: string): number => {
+  const subTotal = (idSearched: number): number => {
     const item = cart.find((item) => item.product.id === idSearched);
     const subTotal = item.product.price * item.quantityUnits;
 
